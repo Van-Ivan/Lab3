@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lab3
 {
-    public partial class Form1 : Form
+    public partial class Form11 : Form
     {
-        public Form1()
+        public Form11()
         {
             InitializeComponent();
         }
@@ -35,6 +35,11 @@ namespace Lab3
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbName_TextChanged(object sender, EventArgs e)
         {
 
         }

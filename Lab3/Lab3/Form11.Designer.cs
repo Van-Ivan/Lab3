@@ -1,6 +1,6 @@
 ﻿namespace Lab3
 {
-    partial class Form1
+    partial class Form11
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -83,10 +83,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbName.Location = new System.Drawing.Point(152, 48);
-            this.tbName.MaximumSize = new System.Drawing.Size(300, 0);
+            this.tbName.MaximumSize = new System.Drawing.Size(300, 40);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(148, 20);
             this.tbName.TabIndex = 3;
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // Form1
             // 
