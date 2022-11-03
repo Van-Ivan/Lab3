@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,12 @@ namespace Графический_редактор
             }
         }
 
+        int _x, _y;
+        bool _mouseClicked = false;
+        Color SelectedColor { get { return Color.Red; } }
+        int SelectedSize { get { return tbSizeBrush.Value; } }
+        Brush _selectedBrush;
+
 
 
 
@@ -68,7 +75,29 @@ namespace Графический_редактор
 
         private void button1_Click(object sender, EventArgs e)
         {
+            _selectedBrush = new QuadBrush(SelectedColor, SelectedSize);
+        }
 
+        private void pictureBox1_mouseDown(object sender, MouseEventArgs e)
+        {
+            if (_selectedBrush == null) { return; }
+
+            _selectedBrush.Draw(pictureBox1.Image as Bitmap, _x, _y);
+            pictureBox1.Refresh();
+            _mouseClicked = true;
+        }
+
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e) { _mouseClicked = false; }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            _x = e.X > 0 ? e.X : 0;
+            _y = e.Y > 0 ? e.Y : 0;
+            if (_mouseClicked)
+            {
+                _selectedBrush.Draw(pictureBox1.Image as Bitmap, _x, _y);
+                pictureBox1.Refresh();
+            }
         }
     }
 }
