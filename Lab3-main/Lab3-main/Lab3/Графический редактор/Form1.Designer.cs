@@ -30,18 +30,16 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сохранитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.СоздатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelTools = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnCircle = new System.Windows.Forms.Button();
+            this.btnSpray = new System.Windows.Forms.Button();
+            this.btnSquare = new System.Windows.Forms.Button();
             this.tbSizeBrush = new System.Windows.Forms.TrackBar();
             this.panelDraw = new System.Windows.Forms.Panel();
-            this.btnSquare = new System.Windows.Forms.Button();
-            this.btnRectangle = new System.Windows.Forms.Button();
-            this.btnCircle = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.panelTools.SuspendLayout();
@@ -65,38 +63,25 @@
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.сохранитьToolStripMenuItem,
-            this.сохранитьToolStripMenuItem1,
-            this.открытьToolStripMenuItem,
+            this.СоздатьToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
-            // сохранитьToolStripMenuItem
+            // СоздатьToolStripMenuItem
             // 
-            this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.сохранитьToolStripMenuItem.Text = "Создать";
-            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
-            // 
-            // сохранитьToolStripMenuItem1
-            // 
-            this.сохранитьToolStripMenuItem1.Name = "сохранитьToolStripMenuItem1";
-            this.сохранитьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.сохранитьToolStripMenuItem1.Text = "Сохранить";
-            // 
-            // открытьToolStripMenuItem
-            // 
-            this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.открытьToolStripMenuItem.Text = "Открыть";
+            this.СоздатьToolStripMenuItem.Name = "СоздатьToolStripMenuItem";
+            this.СоздатьToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.СоздатьToolStripMenuItem.Text = "Создать";
+            this.СоздатьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.сохранитьКакToolStripMenuItem_Click);
             // 
             // справкаToolStripMenuItem1
             // 
@@ -116,7 +101,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnCircle);
-            this.groupBox1.Controls.Add(this.btnRectangle);
+            this.groupBox1.Controls.Add(this.btnSpray);
             this.groupBox1.Controls.Add(this.btnSquare);
             this.groupBox1.Controls.Add(this.tbSizeBrush);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -126,6 +111,39 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Выбор кисти";
+            // 
+            // btnCircle
+            // 
+            this.btnCircle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCircle.Location = new System.Drawing.Point(202, 42);
+            this.btnCircle.Name = "btnCircle";
+            this.btnCircle.Size = new System.Drawing.Size(75, 23);
+            this.btnCircle.TabIndex = 3;
+            this.btnCircle.Text = "Круг";
+            this.btnCircle.UseVisualStyleBackColor = true;
+            this.btnCircle.Click += new System.EventHandler(this.btnCircle_Click);
+            // 
+            // btnSpray
+            // 
+            this.btnSpray.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSpray.Location = new System.Drawing.Point(93, 42);
+            this.btnSpray.Name = "btnSpray";
+            this.btnSpray.Size = new System.Drawing.Size(103, 23);
+            this.btnSpray.TabIndex = 2;
+            this.btnSpray.Text = "Спрей";
+            this.btnSpray.UseVisualStyleBackColor = true;
+            this.btnSpray.Click += new System.EventHandler(this.btnSpray_Click);
+            // 
+            // btnSquare
+            // 
+            this.btnSquare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSquare.Location = new System.Drawing.Point(12, 42);
+            this.btnSquare.Name = "btnSquare";
+            this.btnSquare.Size = new System.Drawing.Size(75, 23);
+            this.btnSquare.TabIndex = 1;
+            this.btnSquare.Text = "Квадрат";
+            this.btnSquare.UseVisualStyleBackColor = true;
+            this.btnSquare.Click += new System.EventHandler(this.button1_Click);
             // 
             // tbSizeBrush
             // 
@@ -150,37 +168,6 @@
             this.panelDraw.Size = new System.Drawing.Size(943, 525);
             this.panelDraw.TabIndex = 2;
             // 
-            // btnSquare
-            // 
-            this.btnSquare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSquare.Location = new System.Drawing.Point(12, 42);
-            this.btnSquare.Name = "btnSquare";
-            this.btnSquare.Size = new System.Drawing.Size(75, 23);
-            this.btnSquare.TabIndex = 1;
-            this.btnSquare.Text = "Квадрат";
-            this.btnSquare.UseVisualStyleBackColor = true;
-            this.btnSquare.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnRectangle
-            // 
-            this.btnRectangle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRectangle.Location = new System.Drawing.Point(93, 42);
-            this.btnRectangle.Name = "btnRectangle";
-            this.btnRectangle.Size = new System.Drawing.Size(103, 23);
-            this.btnRectangle.TabIndex = 2;
-            this.btnRectangle.Text = "Прямоугольник";
-            this.btnRectangle.UseVisualStyleBackColor = true;
-            // 
-            // btnCircle
-            // 
-            this.btnCircle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCircle.Location = new System.Drawing.Point(202, 42);
-            this.btnCircle.Name = "btnCircle";
-            this.btnCircle.Size = new System.Drawing.Size(75, 23);
-            this.btnCircle.TabIndex = 3;
-            this.btnCircle.Text = "Круг";
-            this.btnCircle.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -189,6 +176,9 @@
             this.pictureBox1.Size = new System.Drawing.Size(943, 525);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_mouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
             // BitMap
             // 
@@ -221,15 +211,13 @@
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem1;
         private System.Windows.Forms.Panel panelTools;
         private System.Windows.Forms.Panel panelDraw;
-        private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem СоздатьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TrackBar tbSizeBrush;
         private System.Windows.Forms.Button btnSquare;
         private System.Windows.Forms.Button btnCircle;
-        private System.Windows.Forms.Button btnRectangle;
+        private System.Windows.Forms.Button btnSpray;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

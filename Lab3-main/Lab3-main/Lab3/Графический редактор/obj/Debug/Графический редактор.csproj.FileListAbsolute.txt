@@ -19,3 +19,14 @@ C:\Users\pibo0121016\Downloads\Lab3-main\Lab3-main\Lab3\Графический �
 C:\Users\pibo0121016\Downloads\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csproj.CoreCompileInputs.cache
 C:\Users\pibo0121016\Downloads\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.exe
 C:\Users\pibo0121016\Downloads\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.pdb
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\bin\Debug\Графический редактор.exe.config
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\bin\Debug\Графический редактор.exe
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\bin\Debug\Графический редактор.pdb
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csproj.AssemblyReference.cache
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csproj.SuggestedBindingRedirects.cache
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический_редактор.BitMap.resources
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический_редактор.Properties.Resources.resources
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csproj.GenerateResource.cache
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csproj.CoreCompileInputs.cache
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.exe
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.pdb

@@ -63,19 +63,29 @@ namespace Графический_редактор
 
         }
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e) //Создать, не могу переименовать
         {
-
+            CreateBlank(pictureBox1.Width, pictureBox1.Height);
         }
 
-        private void сохранитьКакToolStripMenuItem_Click(object sender, EventArgs e)
+        private void сохранитьКакToolStripMenuItem_Click(object sender, EventArgs e) //Выход, не могу переименовать
         {
-
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             _selectedBrush = new QuadBrush(SelectedColor, SelectedSize);
+        }
+
+        private void btnCircle_Click(object sender, EventArgs e)
+        {
+            _selectedBrush = new CircleBrush(SelectedColor, SelectedSize);
+        }
+
+        private void btnSpray_Click(object sender, EventArgs e)
+        {
+            _selectedBrush = new SprayBrush(SelectedColor, SelectedSize);
         }
 
         private void pictureBox1_mouseDown(object sender, MouseEventArgs e) //btn_swuere?
@@ -89,6 +99,8 @@ namespace Графический_редактор
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e) { _mouseClicked = false; }
 
+        
+
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             _x = e.X > 0 ? e.X : 0;
@@ -99,5 +111,7 @@ namespace Графический_редактор
                 pictureBox1.Refresh();
             }
         }
+
+        
     }
 }

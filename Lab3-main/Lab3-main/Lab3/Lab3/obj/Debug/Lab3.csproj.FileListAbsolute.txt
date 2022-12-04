@@ -19,3 +19,14 @@ C:\Users\79994\Documents\GitHub\Lab3\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompile
 C:\Users\79994\Documents\GitHub\Lab3\Lab3\Lab3\obj\Debug\Lab3.exe
 C:\Users\79994\Documents\GitHub\Lab3\Lab3\Lab3\obj\Debug\Lab3.pdb
 C:\Users\79994\Documents\GitHub\Lab3\Lab3\Lab3\obj\Debug\Lab3.Form11.resources
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\bin\Debug\Lab3.exe.config
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\bin\Debug\Lab3.exe
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\bin\Debug\Lab3.pdb
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csproj.AssemblyReference.cache
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csproj.SuggestedBindingRedirects.cache
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.Form11.resources
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.exe
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.pdb
