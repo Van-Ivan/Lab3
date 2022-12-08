@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -44,7 +45,7 @@ namespace Графический_редактор
 
         int _x, _y;
         bool _mouseClicked = false;
-        Color SelectedColor { get { return Color.Red; } }
+        Color SelectedColor { get { return colorDialog1.Color; } }
         int SelectedSize { get { return tbSizeBrush.Value; } }
         Brush _selectedBrush;
 
@@ -63,14 +64,22 @@ namespace Графический_редактор
 
         }
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e) //Создать, не могу переименовать
+        
+
+        private void создатьToolStripMenuItem_Click(object sender, EventArgs e) //Создать, не могу переименовать
         {
+            var form = new AskSizeForm();
+            form.ShowDialog();
+            if (form.Canceled == false)
+            {
+                CreateBlank(form.W, form.H);
+            }
             CreateBlank(pictureBox1.Width, pictureBox1.Height);
         }
 
-        private void сохранитьКакToolStripMenuItem_Click(object sender, EventArgs e) //Выход, не могу переименовать
+        private void выходКакToolStripMenuItem_Click(object sender, EventArgs e) //Выход, не могу переименовать
         {
-            this.Close();
+            Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -99,7 +108,13 @@ namespace Графический_редактор
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e) { _mouseClicked = false; }
 
-        
+        private void btnColorChange_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                btnColorChange.BackColor = colorDialog1.Color;
+            }
+        }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {

@@ -30,3 +30,4 @@ D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csproj.CoreCompileInputs.cache
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.exe
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.pdb
+D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический_редактор.AskSizeForm.resources

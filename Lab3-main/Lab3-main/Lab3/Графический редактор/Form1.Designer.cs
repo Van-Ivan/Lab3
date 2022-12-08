@@ -41,6 +41,8 @@
             this.tbSizeBrush = new System.Windows.Forms.TrackBar();
             this.panelDraw = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnColorChange = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.menuStrip1.SuspendLayout();
             this.panelTools.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -51,6 +53,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.AutoSize = false;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
             this.справкаToolStripMenuItem1});
@@ -72,16 +75,16 @@
             // СоздатьToolStripMenuItem
             // 
             this.СоздатьToolStripMenuItem.Name = "СоздатьToolStripMenuItem";
-            this.СоздатьToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.СоздатьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.СоздатьToolStripMenuItem.Text = "Создать";
-            this.СоздатьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
+            this.СоздатьToolStripMenuItem.Click += new System.EventHandler(this.создатьToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.сохранитьКакToolStripMenuItem_Click);
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходКакToolStripMenuItem_Click);
             // 
             // справкаToolStripMenuItem1
             // 
@@ -91,6 +94,8 @@
             // 
             // panelTools
             // 
+            this.panelTools.AutoScroll = true;
+            this.panelTools.Controls.Add(this.btnColorChange);
             this.panelTools.Controls.Add(this.groupBox1);
             this.panelTools.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelTools.Location = new System.Drawing.Point(0, 24);
@@ -161,6 +166,7 @@
             // 
             // panelDraw
             // 
+            this.panelDraw.AutoScroll = true;
             this.panelDraw.Controls.Add(this.pictureBox1);
             this.panelDraw.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDraw.Location = new System.Drawing.Point(308, 24);
@@ -170,8 +176,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(943, 525);
             this.pictureBox1.TabIndex = 0;
@@ -179,6 +184,16 @@
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_mouseDown);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
+            // 
+            // btnColorChange
+            // 
+            this.btnColorChange.Location = new System.Drawing.Point(11, 151);
+            this.btnColorChange.Name = "btnColorChange";
+            this.btnColorChange.Size = new System.Drawing.Size(109, 23);
+            this.btnColorChange.TabIndex = 1;
+            this.btnColorChange.Text = "Выбор цвета";
+            this.btnColorChange.UseVisualStyleBackColor = true;
+            this.btnColorChange.Click += new System.EventHandler(this.btnColorChange_Click);
             // 
             // BitMap
             // 
@@ -200,7 +215,6 @@
             this.panelDraw.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -219,6 +233,8 @@
         private System.Windows.Forms.Button btnCircle;
         private System.Windows.Forms.Button btnSpray;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnColorChange;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
