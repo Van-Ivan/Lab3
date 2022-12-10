@@ -34,6 +34,7 @@
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelTools = new System.Windows.Forms.Panel();
+            this.btnColorChange = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCircle = new System.Windows.Forms.Button();
             this.btnSpray = new System.Windows.Forms.Button();
@@ -41,8 +42,8 @@
             this.tbSizeBrush = new System.Windows.Forms.TrackBar();
             this.panelDraw = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnColorChange = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.btnLastic = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panelTools.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -75,14 +76,14 @@
             // СоздатьToolStripMenuItem
             // 
             this.СоздатьToolStripMenuItem.Name = "СоздатьToolStripMenuItem";
-            this.СоздатьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.СоздатьToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.СоздатьToolStripMenuItem.Text = "Создать";
             this.СоздатьToolStripMenuItem.Click += new System.EventHandler(this.создатьToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходКакToolStripMenuItem_Click);
             // 
@@ -103,8 +104,19 @@
             this.panelTools.Size = new System.Drawing.Size(308, 525);
             this.panelTools.TabIndex = 1;
             // 
+            // btnColorChange
+            // 
+            this.btnColorChange.Location = new System.Drawing.Point(11, 151);
+            this.btnColorChange.Name = "btnColorChange";
+            this.btnColorChange.Size = new System.Drawing.Size(109, 23);
+            this.btnColorChange.TabIndex = 1;
+            this.btnColorChange.Text = "Выбор цвета";
+            this.btnColorChange.UseVisualStyleBackColor = true;
+            this.btnColorChange.Click += new System.EventHandler(this.btnColorChange_Click);
+            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnLastic);
             this.groupBox1.Controls.Add(this.btnCircle);
             this.groupBox1.Controls.Add(this.btnSpray);
             this.groupBox1.Controls.Add(this.btnSquare);
@@ -163,6 +175,7 @@
             this.tbSizeBrush.TabIndex = 0;
             this.tbSizeBrush.TickStyle = System.Windows.Forms.TickStyle.None;
             this.tbSizeBrush.Value = 1;
+            this.tbSizeBrush.Scroll += new System.EventHandler(this.tbSizeBrush_Scroll);
             // 
             // panelDraw
             // 
@@ -185,15 +198,15 @@
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
-            // btnColorChange
+            // btnLastic
             // 
-            this.btnColorChange.Location = new System.Drawing.Point(11, 151);
-            this.btnColorChange.Name = "btnColorChange";
-            this.btnColorChange.Size = new System.Drawing.Size(109, 23);
-            this.btnColorChange.TabIndex = 1;
-            this.btnColorChange.Text = "Выбор цвета";
-            this.btnColorChange.UseVisualStyleBackColor = true;
-            this.btnColorChange.Click += new System.EventHandler(this.btnColorChange_Click);
+            this.btnLastic.Location = new System.Drawing.Point(93, 71);
+            this.btnLastic.Name = "btnLastic";
+            this.btnLastic.Size = new System.Drawing.Size(75, 23);
+            this.btnLastic.TabIndex = 4;
+            this.btnLastic.Text = "Ластик";
+            this.btnLastic.UseVisualStyleBackColor = true;
+            this.btnLastic.Click += new System.EventHandler(this.btnLastic_Click);
             // 
             // BitMap
             // 
@@ -235,6 +248,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnColorChange;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button btnLastic;
     }
 }
 

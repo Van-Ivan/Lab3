@@ -20,10 +20,7 @@ namespace Графический_редактор
             CreateBlank(pictureBox1.Width, pictureBox1.Height);
         }
 
-        Color DefaultColor
-        {
-            get { return Color.White; }
-        }
+        Color DefaultColor { get { return Color.LightGray; } }
 
         void CreateBlank(int width, int height)
         {
@@ -41,6 +38,8 @@ namespace Графический_редактор
             {
                 oldImage.Dispose();
             }
+            Brush.W = width;
+            Brush.H = height;
         }
 
         int _x, _y;
@@ -48,11 +47,6 @@ namespace Графический_редактор
         Color SelectedColor { get { return colorDialog1.Color; } }
         int SelectedSize { get { return tbSizeBrush.Value; } }
         Brush _selectedBrush;
-
-
-
-
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -64,9 +58,7 @@ namespace Графический_редактор
 
         }
 
-        
-
-        private void создатьToolStripMenuItem_Click(object sender, EventArgs e) //Создать, не могу переименовать
+        private void создатьToolStripMenuItem_Click(object sender, EventArgs e) 
         {
             var form = new AskSizeForm();
             form.ShowDialog();
@@ -74,10 +66,9 @@ namespace Графический_редактор
             {
                 CreateBlank(form.W, form.H);
             }
-            CreateBlank(pictureBox1.Width, pictureBox1.Height);
         }
 
-        private void выходКакToolStripMenuItem_Click(object sender, EventArgs e) //Выход, не могу переименовать
+        private void выходКакToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -113,7 +104,19 @@ namespace Графический_редактор
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 btnColorChange.BackColor = colorDialog1.Color;
+                _selectedBrush.BrushColor = colorDialog1.Color;
             }
+        }
+
+        private void tbSizeBrush_Scroll(object sender, EventArgs e)
+        {
+            if (_selectedBrush != null)
+            _selectedBrush.Size = SelectedSize;
+        }
+
+        private void btnLastic_Click(object sender, EventArgs e)
+        {
+            _selectedBrush = new ClearBrush(DefaultColor, SelectedSize);
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)

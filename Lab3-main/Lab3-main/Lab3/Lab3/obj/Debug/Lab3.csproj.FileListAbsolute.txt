@@ -30,3 +30,13 @@ D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResou
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.exe
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.pdb
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\bin\Debug\Lab3.exe.config
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\bin\Debug\Lab3.exe
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\bin\Debug\Lab3.pdb
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csprojAssemblyReference.cache
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.Form11.resources
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.exe
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Lab3\obj\Debug\Lab3.pdb

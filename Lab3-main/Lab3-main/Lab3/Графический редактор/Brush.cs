@@ -9,6 +9,7 @@ namespace Графический_редактор
 {
     abstract class Brush
     {
+        public static int W, H;
         public Color BrushColor { get; set; }
         public int Size { get; set; }
         public Brush(Color brushColor, int size)

@@ -31,3 +31,14 @@ D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.exe
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.pdb
 D:\github\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический_редактор.AskSizeForm.resources
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\bin\Debug\Графический редактор.exe.config
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\bin\Debug\Графический редактор.exe
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\bin\Debug\Графический редактор.pdb
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csprojAssemblyReference.cache
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический_редактор.AskSizeForm.resources
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический_редактор.BitMap.resources
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический_редактор.Properties.Resources.resources
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csproj.GenerateResource.cache
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.csproj.CoreCompileInputs.cache
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.exe
+Z:\гит\Lab3\Lab3-main\Lab3-main\Lab3\Графический редактор\obj\Debug\Графический редактор.pdb
